@@ -4,13 +4,13 @@ dependencies:
       - unzip terraform_0.6.3_linux_amd64.zip 
   
  
-  test: 
+    test: 
     override: 
      - ./terraform remote config -backend=S3 -backend-config="bucket=$BUCKET" -backend-config="key=terraform.tfstate" -backend-config="region=us-west-2" 
      - ./terraform plan -out=terraform.plan 
   
  
-  deployment: 
+    deployment: 
     production: 
       branch: master 
       commands: 
