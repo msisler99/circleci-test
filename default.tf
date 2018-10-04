@@ -3,7 +3,7 @@ provider "aws" {
 }
  
  resource "aws_vpc" "minimal" { 
-   cidr_block = "10.0.0.0/30" 
+   cidr_block = "10.0.0.0/28" 
    tags { 
      Name = "minimal" 
    } 
