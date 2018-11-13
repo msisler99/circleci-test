@@ -5,30 +5,30 @@ https://aws.amazon.com/blogs/security/how-to-delegate-management-of-multi-factor
 
 ## AWS Administrator Process flow
 
-1 Log into the AWS console and go to IAM
-1 Create a group called "Force_MFA"
-1 Click next until the group is created
-1 Create a policy called "Force_MFA"
-1 Select the "JSON" tab to edit the JSON code
-1 Copy and paste the policy text from the link: https://s3.amazonaws.com/awsiammedia/public/sample/DelegateManagementofMFA/DelegateManagementofMFA_policydocument_060115.txt replacing the default JSON code in the policy
-1 Replace all code values "ACCOUNT-ID-WITHOUT-HYPHENS" with your AWS account ID  
-1 Click "Review Policy"
-1 Name the policy "Force_MFA" and give it a description
-1 Click "Create Policy"
+- Log into the AWS console and go to IAM
+- Create a group called "Force_MFA"
+- Click next until the group is created
+- Create a policy called "Force_MFA"
+- Select the "JSON" tab to edit the JSON code
+- Copy and paste the policy text from the link: https://s3.amazonaws.com/awsiammedia/public/sample/DelegateManagementofMFA/DelegateManagementofMFA_policydocument_060115.txt replacing the default JSON code in the policy
+- Replace all code values "ACCOUNT-ID-WITHOUT-HYPHENS" with your AWS account ID  
+- Click "Review Policy"
+- Name the policy "Force_MFA" and give it a description
+- Click "Create Policy"
 
 ## Attach the newly created "Force_MFA" policy to the newly created "Force_MFA" group;
-1 Select Groups
-1 Select "Force_MFA" group
-1 Select "Attach Policy"
-1 Select "Force_MFA" policy
-1 Select "Attach Policy"
+- Select Groups
+- Select "Force_MFA" group
+- Select "Attach Policy"
+- Select "Force_MFA" policy
+- Select "Attach Policy"
 
 ## Adding users 
 Follow the steps below to add new AWS console users and force them to enable MFA    
 
-1 As an AWS Administrator, add a new user
-1 (IMPORTANT) Add the new user to the "Force_MFA" group first
-1 Add the new user to any additional groups that are required for proper access
+- As an AWS Administrator, add a new user
+- (IMPORTANT) Add the new user to the "Force_MFA" group first
+- Add the new user to any additional groups that are required for proper access
 
 
 
