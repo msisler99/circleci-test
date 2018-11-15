@@ -7,4 +7,4 @@
 - Terraform script files    (used to configure the services built)
 - Shell scripts             (used to configure the services built)
 - Manifest files            (used to configure dependencies during a build)
-- Config.yml files          (used by the CI tool to orchestrate the build and deployment of a service)
+- Config.yml files          (used by the CI tool to orchestrate the build, deployment and removal of a service)
