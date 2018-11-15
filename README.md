@@ -34,5 +34,5 @@ Follow the steps below to add new AWS console users and force them to enable MFA
 
 At this point the new user will be able to log into the console but will not be allowed access to any AWS resources until the user has enabled MFA
 
-The following link will describe how a user can enable MFA, http://docs.aws.amazon.com/IAM/latest/UserGuide/MFADeviceSetup.html
+The following link will describe how a user can enable MFA, http://docs.aws.amazon.com/IAM/latest/UserGuide/MFADeviceSetup.html 
 
