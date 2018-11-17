@@ -69,7 +69,7 @@ Install Terraform on workstation/server for running Terraform This project uses 
 
 ## Terraform commands:
 
-"terraform init" initializes the backend to store the state file on the S3 bucket created above. Terraform init uses the AWS CLI parameters. If using Terrafom local state store, remove the backend.tf file and the state files will be created locally.
+***terraform init*** initializes the backend to store the state file on the S3 bucket created above. Terraform init uses the AWS CLI parameters. If using Terrafom local state store, remove the backend.tf file and the state files will be created locally.
 
 ***terraform plan*** reads all .tf files and shows the planned result without creating anything in AWS.
 *"terraform apply"* reads all .tf files and applies the "planned" changes after prompting for a "yes" response.
