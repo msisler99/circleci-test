@@ -1,5 +1,5 @@
 
-Terraform scripts for creating a complete Dev AWS Data  environment. This example also uses an AWS S3 bucket and a DynamoDB table to store the Terraform state file remotely for multi user access and file locking.
+# Terraform scripts for creating a complete Dev AWS Data  environment. This example also uses an AWS S3 bucket and a DynamoDB table to store the Terraform state file remotely for multi user access and file locking.
 
 The Terraform scripts will build the following AWS resources
 
