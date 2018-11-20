@@ -36,3 +36,5 @@ At this point the new user will be able to log into the console but will not be 
 
 The following link will describe how a user can enable MFA, http://docs.aws.amazon.com/IAM/latest/UserGuide/MFADeviceSetup.html 
 
+
+
