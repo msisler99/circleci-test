@@ -9,13 +9,15 @@ The Development account IP addresses will follow the 10.0.x.x numbering conventi
 The Stage account IP addresses will follow the 10.1.x.x numbering convention.
 The Production account IP addresses will follow the 10.2.x.x numbering convention.
 ## VPC
-VPC names indicate the functionality of the VPC or more specifically to indicate what the resources in the VPC are used for.  The VPCs with an account are designed to isolate access for various groups of users. 
+VPC names indicate the functionality of the VPC or more specifically to indicate what the resources in the VPC are used for.  The VPCs with an account are designed to isolate access for various groups of users.
+Additional VPC “Tags” can also describe the functionality of the VPC.  
+Note: The Tag key value of “Name” is the “Name” value shown on the AWS management console.
+
 ### Examples; 
 - DEVPub would indicate the development account Public facing VPC
 - DevPriv would indicate the development account Private only VPC
 - DevData would indicate the development account Data VPC serving both the Public and Private VPCs
-Additional VPC “Tags” can also describe the functionality of the VPC.  
-Note: The Tag key value of “Name” is the “Name” value shown on the AWS management console.
+
 
 ## Network ACL
 Network ACLs control traffic at the IP level for a VPC
