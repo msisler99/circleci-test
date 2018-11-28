@@ -11,9 +11,9 @@ The Production account IP addresses will follow the 10.2.x.x numbering conventio
 ## VPC
 VPC names indicate the functionality of the VPC or more specifically to indicate what the resources in the VPC are used for.  The VPCs with an account are designed to isolate access for various groups of users. 
 ### Examples; 
-DEVPub would indicate the development account Public facing VPC
-DevPriv would indicate the development account Private only VPC
-DevData would indicate the development account Data VPC serving both the Public and Private VPCs
+- DEVPub would indicate the development account Public facing VPC
+- DevPriv would indicate the development account Private only VPC
+- DevData would indicate the development account Data VPC serving both the Public and Private VPCs
 Additional VPC “Tags” can also describe the functionality of the VPC.  
 Note: The Tag key value of “Name” is the “Name” value shown on the AWS management console.
 
@@ -22,14 +22,21 @@ Network ACLs control traffic at the IP level for a VPC
 Mapping of network ACLs manage access to the Subnets that are associated with the ACL.
 Name – Indicates which VPC this ACL is associated with. 
 ### Examples’
-DevPublicACL, DevPrivateACL, DevDataACL
+- DevPublicACL 
+- DevPrivateACL 
+- DevDataACL
 ## Subnets
 Subnet names reflect the Functionality and the availability zone (AZ) of the subnet and control inbound and outbound port types.
 Subnet Functionality = Public and Private
-## Availability Zones – us-gov-west-2a, us-gov-west-2b
+## Availability Zones 
+- us-gov-west-2a 
+- us-gov-west-2b
 Subnets should indicate the VPC they are associated with.
 Examples;
-DevPublicAZA, DevPublicAZB, DevPrivateAZA, DevDataAZA….
+- DevPublicAZA 
+- DevPublicAZB 
+- DevPrivateAZ 
+- DevDataAZA….
 
 ## VPC Route Tables
 VPC Route Tables control access from specific IP addresses or IP address ranges at the VPC level.
@@ -48,11 +55,11 @@ Example Security Group names;
 DevPublicALB for Development, Public, Application Load balancer
 DevPrivateALB for Development, Private, Application Load balancer
 
-Example additional functional Security Group names;
+### Example additional functional Security Group names;
 
-DevPublicWebServer Web Server security group for Web servers allowing ports for web Server connections
- DevPublicAppServer App Server Security Group for App servers allowing ports for App Server connections
- DevDataDBServer DB Server Security Group for DB servers allowing ports for the DB connections
+- DevPublicWebServer Web Server security group for Web servers allowing ports for web Server connections
+- DevPublicAppServer App Server Security Group for App servers allowing ports for App Server connections
+ - DevDataDBServer DB Server Security Group for DB servers allowing ports for the DB connections
 
 ## EC2 instance Names (if applicable)
 Server names should follow the DHCS server naming convention where possible.  Additional characters have been added and some characters have been changed in order to make the server names have more intelligence in the AWS world.
@@ -77,8 +84,8 @@ Lamba functions should be defined to be as generic as possible and use Tags on t
 Example Lambda functions to start instances;
 	 DevPubStart6AM
 Account - VPC - Functionality
-DevPubStart6AM – This function would automatically start instances in the Dev account, Public VPC at 6 AM daily.  The function relies on the appropriate “Tag” value associated with the instance.
-DevPubStop6PM – This function would automatically stop instances in the Dev account, Public VPC at 6 PM daily.  The function relies on the appropriate “Tag” value associated with the instance.
+- DevPubStart6AM – This function would automatically start instances in the Dev account, Public VPC at 6 AM daily.  The function relies on the appropriate “Tag” value associated with the instance.
+- DevPubStop6PM – This function would automatically stop instances in the Dev account, Public VPC at 6 PM daily.  The function relies on the appropriate “Tag” value associated with the instance.
 Some Lambda functions will be generic meaning they will operate in all VPCs, all subnets and all environments.  This type of lambda function will only name the functionality of the script and not the operating areas.
 ## Cloud Formation Scripts
 Cloud formation scripts should be used wherever possible to create resources as they can be deployed quickly and will contain much of the setup required for an instance.  Cloud formation scripts will need to be unique to VPC and subnets or will need to allow these values to be “selected” from dropdowns when run.
@@ -89,11 +96,11 @@ DevPubKP01
 Dev – Pub - KP01
 Account  - VPC – Key pair name and number
 ## ROLES and Policies
-Roles are required when an instance is created.
-Roles are made up of a list of policies.  Policies can be added to and removed from roles as necessary.
-Policies give access to components within AWS
-Roles should be generic where possible so as to minimize the amount of roles to maintain.
-Roles should be descriptive of their functionality.
+- Roles are required when an instance is created.
+- Roles are made up of a list of policies.  Policies can be added to and removed from roles as necessary.
+- Policies give access to components within AWS
+- Roles should be generic where possible so as to minimize the amount of roles to maintain.
+- Roles should be descriptive of their functionality.
 Because roles are not specific to a VPC or a Subnet or an Environment, they can be named for their functionality as needed.
 ## Users
 	AWS Usernames will be the DHCS email username for console users.
@@ -101,9 +108,9 @@ Because roles are not specific to a VPC or a Subnet or an Environment, they can 
 ## Database Names
 Databases will be named according to the environment in which they reside and their functionality, similar to EC2 instances.  A database can be associated with more than 1 availability zones (AZ) and should be where High Availability and Failover are necessary.  
 Example database name;
-DevDataSqlSrvDM 
-Dev Data SqlSrv DM
-Dev account, Data VPC, SQL Server, Data Modeling (usage)
+- DevDataSqlSrvDM 
+- Dev Data SqlSrv DM
+- Dev account, Data VPC, SQL Server, Data Modeling (usage)
 The Tag key value of “Name” = the “Name” value shown on the AWS management console.
 The Tag key value of “Owner” will identify a State Manager’s email address or Cost Center if applicable in order to track costs and/or usage.
  
