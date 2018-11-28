@@ -10,7 +10,7 @@ The Stage account IP addresses will follow the 10.1.x.x numbering convention.
 The Production account IP addresses will follow the 10.2.x.x numbering convention.
 ## VPC
 VPC names indicate the functionality of the VPC or more specifically to indicate what the resources in the VPC are used for.  The VPCs with an account are designed to isolate access for various groups of users. 
-	## VPC Examples; 
+## VPC Examples; 
 DEVPub would indicate the development account Public facing VPC
 DevPriv would indicate the development account Private only VPC
 DevData would indicate the development account Data VPC serving both the Public and Private VPCs
