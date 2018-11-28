@@ -25,15 +25,17 @@ Name – Indicates which VPC this ACL is associated with.
 - DevPublicACL 
 - DevPrivateACL 
 - DevDataACL
-## Subnets
-Subnet names reflect the Functionality and the availability zone (AZ) of the subnet and control inbound and outbound port types.
-Subnet Functionality = Public and Private
+
 ## Availability Zones 
 - us-gov-west-2a 
 - us-gov-west-2b
 
+## Subnets
+Subnet names reflect the Functionality and the availability zone (AZ) of the subnet and control inbound and outbound port types.
+Subnet Functionality = Public and Private
+
 Subnets should indicate the VPC they are associated with.
-Examples;
+### Examples;
 - DevPublicAZA 
 - DevPublicAZB 
 - DevPrivateAZ 
