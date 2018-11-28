@@ -46,8 +46,9 @@ Subnets should indicate the VPC they are associated with.
 ## VPC Route Tables
 VPC Route Tables control access from specific IP addresses or IP address ranges at the VPC level.
 Route tables are associated with a specific VPC and are associated with 1 or more subnets.
-Custom route tables should only be used to allow specific IP addresses to a subnet.  
-###Example;
+Custom route tables should only be used to allow specific IP addresses to a subnet.
+
+### Example;
 - DevPublicRt 
 - DevPrivateRT 
 - DevDataRT
@@ -76,7 +77,7 @@ Server names should follow the DHCS server naming convention where possible.  Ad
 - PPP = Project name - the next 3 characters will be used to designate the Project that owns the server.
 - FFF = Server Function – the next 3 characters will be used to designate the server’s primary function.
 - NN =    A two-digit number from 01 to 99 - the last two characters are numerals to make each server unique.  No two servers can have the exact same name.
-Example of EC2 server name applied;
+### Example of EC2 server name applied;
 DevPubFDRWeb01		Dev Pub FDR Web 01
 Account, VPC, Project, Server Function, Instance Count
 
@@ -110,8 +111,8 @@ Account  - VPC – Key pair name and number
 - Roles should be descriptive of their functionality.
 Because roles are not specific to a VPC or a Subnet or an Environment, they can be named for their functionality as needed.
 ## Users
-	AWS Usernames will be the DHCS email username for console users.
-	AWS programmatic user names should indicate the functionality of the user account.
+- AWS Usernames will be the DHCS email username for console users.
+- AWS programmatic user names should indicate the functionality of the user account.
 ## Database Names
 Databases will be named according to the environment in which they reside and their functionality, similar to EC2 instances.  A database can be associated with more than 1 availability zones (AZ) and should be where High Availability and Failover are necessary.  
 Example database name;
