@@ -41,7 +41,7 @@ Subnets should indicate the VPC they are associated with.
 - DevPublicAZA 
 - DevPublicAZB 
 - DevPrivateAZ 
-- DevDataAZA….
+- DevDataAZA
 
 ## VPC Route Tables
 VPC Route Tables control access from specific IP addresses or IP address ranges at the VPC level.
@@ -90,9 +90,9 @@ Tags can also be added to the instance to support the use of Lambda functions su
 Tags can also be used for unique identifiers such as showing the group or department who uses/owns the applications on the server.
 ## Lambda Functions
 Lamba functions should be defined to be as generic as possible and use Tags on the instances to further refine the Lamba targets. Lambda functions can operate on resources within any VPC or any subnet so they should be named correctly to identify their functionality. 
-### Example Lambda functions to start instances;
+### Example Lambda functions;
 - DevPubStart6AM
-Account - VPC - Functionality
+- Account - VPC - Functionality
 - DevPubStart6AM – This function would automatically start instances in the Dev account, Public VPC at 6 AM daily.  The function relies on the appropriate “Tag” value associated with the instance.
 - DevPubStop6PM – This function would automatically stop instances in the Dev account, Public VPC at 6 PM daily.  The function relies on the appropriate “Tag” value associated with the instance.
 Some Lambda functions will be generic meaning they will operate in all VPCs, all subnets and all environments.  This type of lambda function will only name the functionality of the script and not the operating areas.
