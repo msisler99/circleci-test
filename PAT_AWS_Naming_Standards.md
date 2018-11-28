@@ -80,7 +80,7 @@ Server names should follow the DHCS server naming convention where possible.  Ad
 ### Example of EC2 server name applied;
 - DevPubFDRWeb01		
 - Dev Pub FDR Web 01
-- Account, VPC, Project, Server Function, Instance Count
+- Account - VPC - Project - Server Function - Instance Count
 
 ## EC2 Tag values
 Note: The Tag key value of “Name” is the “Name” value shown on the AWS management console.
