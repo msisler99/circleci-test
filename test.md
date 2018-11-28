@@ -10,7 +10,7 @@ The Stage account IP addresses will follow the 10.1.x.x numbering convention.
 The Production account IP addresses will follow the 10.2.x.x numbering convention.
 ## VPC
 VPC names indicate the functionality of the VPC or more specifically to indicate what the resources in the VPC are used for.  The VPCs with an account are designed to isolate access for various groups of users. 
-## VPC Examples; 
+### Examples; 
 DEVPub would indicate the development account Public facing VPC
 DevPriv would indicate the development account Private only VPC
 DevData would indicate the development account Data VPC serving both the Public and Private VPCs
@@ -21,7 +21,7 @@ Note: The Tag key value of “Name” is the “Name” value shown on the AWS m
 Network ACLs control traffic at the IP level for a VPC
 Mapping of network ACLs manage access to the Subnets that are associated with the ACL.
 Name – Indicates which VPC this ACL is associated with. 
-## Examples’
+### Examples’
 DevPublicACL, DevPrivateACL, DevDataACL
 ## Subnets
 Subnet names reflect the Functionality and the availability zone (AZ) of the subnet and control inbound and outbound port types.
@@ -56,12 +56,12 @@ DevPublicWebServer Web Server security group for Web servers allowing ports for 
 
 ## EC2 instance Names (if applicable)
 Server names should follow the DHCS server naming convention where possible.  Additional characters have been added and some characters have been changed in order to make the server names have more intelligence in the AWS world.
-AAAVVVPPPFFFNN where:
-AAA = Account (Dev, Stg, Prd) 
-VVV = AWS VPC name (Pub, Prv, Dat)
-PPP = Project name - the next 3 characters will be used to designate the Project that owns the server.
-FFF = Server Function – the next 3 characters will be used to designate the server’s primary function.
-NN =    A two-digit number from 01 to 99 - the last two characters are numerals to make each server unique.  No two servers can have the exact same name.
+- AAAVVVPPPFFFNN where:
+- AAA = Account (Dev, Stg, Prd) 
+- VVV = AWS VPC name (Pub, Prv, Dat)
+- PPP = Project name - the next 3 characters will be used to designate the Project that owns the server.
+- FFF = Server Function – the next 3 characters will be used to designate the server’s primary function.
+- NN =    A two-digit number from 01 to 99 - the last two characters are numerals to make each server unique.  No two servers can have the exact same name.
 Example of EC2 server name applied;
 DevPubFDRWeb01		Dev Pub FDR Web 01
 Account, VPC, Project, Server Function, Instance Count
