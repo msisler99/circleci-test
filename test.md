@@ -101,9 +101,9 @@ Cloud formation scripts should be used wherever possible to create resources as 
 ## Key Pairs
 Key Pairs are required at the time an instance is created. The key pair is the default method to allow specific types of connections to an Instance.
 Key Pairs can be shared amongst EC2 instances, and should be in order to minimize key pair management.
-DevPubKP01  
-Dev – Pub - KP01
-Account  - VPC – Key pair name and number
+- DevPubKP01  
+- Dev – Pub - KP01
+- Account - VPC – Key pair name and number
 ## ROLES and Policies
 - Roles are required when an instance is created.
 - Roles are made up of a list of policies.  Policies can be added to and removed from roles as necessary.
