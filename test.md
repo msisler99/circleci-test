@@ -47,18 +47,20 @@ Subnets should indicate the VPC they are associated with.
 VPC Route Tables control access from specific IP addresses or IP address ranges at the VPC level.
 Route tables are associated with a specific VPC and are associated with 1 or more subnets.
 Custom route tables should only be used to allow specific IP addresses to a subnet.  
-Example;
-	DevPublicRt, DevPrivateRT, DevDataRT
+###Example;
+- DevPublicRt 
+- DevPrivateRT 
+- DevDataRT
 
 ## Security Groups (SG)
 Security groups control access at the Instance level across all availability zones in a VPC. 
 The overall number of Security Groups can be minimized by creating "generic” security groups and associating AWS resources with the generic security groups. Security Groups should be named so as to identify the functionality.  When necessary, a Unique Security Group can be used if the functionality does not match an existing Security Group.
 Security groups should have the environment, the VPC, and the functionality as part of the name in order to quickly identify them and to allow proper sorting from the AWS console.
 An AWS resource can be associated with more than one Security Group. At a minimum, a resource will be associated with one Security Group depicting the functionality of the resource. This will allow the control of port access at a higher level and reduce the number of security groups required to achieve the optimum security controls.
-Example Security Group names;
+### Example Security Group names;
 
-DevPublicALB for Development, Public, Application Load balancer
-DevPrivateALB for Development, Private, Application Load balancer
+- DevPublicALB for Development, Public, Application Load balancer
+- DevPrivateALB for Development, Private, Application Load balancer
 
 ### Example additional functional Security Group names;
 
@@ -86,8 +88,8 @@ Tags can also be added to the instance to support the use of Lambda functions su
 Tags can also be used for unique identifiers such as showing the group or department who uses/owns the applications on the server.
 ## Lambda Functions
 Lamba functions should be defined to be as generic as possible and use Tags on the instances to further refine the Lamba targets. Lambda functions can operate on resources within any VPC or any subnet so they should be named correctly to identify their functionality. 
-Example Lambda functions to start instances;
-	 DevPubStart6AM
+### Example Lambda functions to start instances;
+- DevPubStart6AM
 Account - VPC - Functionality
 - DevPubStart6AM – This function would automatically start instances in the Dev account, Public VPC at 6 AM daily.  The function relies on the appropriate “Tag” value associated with the instance.
 - DevPubStop6PM – This function would automatically stop instances in the Dev account, Public VPC at 6 PM daily.  The function relies on the appropriate “Tag” value associated with the instance.
