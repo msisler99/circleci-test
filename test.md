@@ -31,6 +31,7 @@ Subnet Functionality = Public and Private
 ## Availability Zones 
 - us-gov-west-2a 
 - us-gov-west-2b
+
 Subnets should indicate the VPC they are associated with.
 Examples;
 - DevPublicAZA 
