@@ -5,9 +5,9 @@ The intelligence attached to the names will reflect the account, the VPC and the
 Names will follow the CamelCase naming convention in order to help the user separate parts of a name quickly.  CamelCase is a naming convention in which a name is formed of multiple words that are joined together as a single word with the first letter of each of the multiple words capitalized so that each word that makes up the name can easily be read
 ## IPAddress
 The IP Address will be designed to quickly indicate to the user which account the user is operating in.
-The Development account IP addresses will follow the 10.0.x.x numbering convention.
-The Stage account IP addresses will follow the 10.1.x.x numbering convention.
-The Production account IP addresses will follow the 10.2.x.x numbering convention.
+The Development account IP addresses will follow the 10.0.X.X numbering convention.
+The Stage account IP addresses will follow the 10.1.X.X numbering convention.
+The Production account IP addresses will follow the 10.2.X.X numbering convention.
 ## VPC
 VPC names indicate the functionality of the VPC or more specifically to indicate what the resources in the VPC are used for.  The VPCs with an account are designed to isolate access for various groups of users.
 Additional VPC “Tags” can also describe the functionality of the VPC.  
